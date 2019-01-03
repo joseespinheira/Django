@@ -29,7 +29,7 @@ ALLOWED_HOSTS = []
 #ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 ALLOWED_HOSTS = ['0.0.0.0', '.pythonanywhere.com']
-ALLOWED_HOSTS = ['127.0.0.1', '.cs50.io']
+#ALLOWED_HOSTS = ['127.0.0.1', '.cs50.io']
 
 # Application definition
 
