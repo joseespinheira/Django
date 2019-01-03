@@ -27,7 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
-ALLOWED_HOSTS = ['127.0.0.1', '.c9users.io']
+ALLOWED_HOSTS = ['127.0.0.1', 'joseespinheira.pythonanywhere.com']
 ALLOWED_HOSTS = ['127.0.0.1', 'sisdistribuido-jose-espinheira.cs50.io']
 
 # Application definition
