@@ -26,10 +26,9 @@ SECRET_KEY = 'f72c6af8e83eab2edbcce6dafb51b5016f08384a'
 DEBUG = True
 
 ALLOWED_HOSTS = []
-#ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
-ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
-ALLOWED_HOSTS = ['0.0.0.0', '.pythonanywhere.com']
-#ALLOWED_HOSTS = ['127.0.0.1', '.cs50.io']
+
+ALLOWED_HOSTS = ['127.0.0.1' , '.cs50.io', '.pythonanywhere.com']
+
 
 # Application definition
 
