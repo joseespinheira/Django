@@ -2,15 +2,20 @@
 
 {% block content %}
     <div class="post">
-        {% if user.is_authenticated %}
+        {% ifequal user post.author %}
             <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
-        {% endif %}{% if post.published_date %}
+        {% endifequal %}
+        {% if post.published_date %}
             <div class="date">
                 {{ post.published_date }}
             </div>
         {% endif %}
         <h1>{{ post.title }}</a></h1>
-        <h4>Autor: {{ post.author }}</a></h4>
+        
         <p>{{ post.text|linebreaksbr }}</p>
+        
+        <h4>Autor: {{ post.author }}</a></h4>
+        
+        
     </div>
 {% endblock %}
