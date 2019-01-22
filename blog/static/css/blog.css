@@ -52,3 +52,57 @@ h1, h2, h3, h4 {
 .comment {
     margin: 20px 0px 20px 20px;
 }
+
+.bnav{
+    padding: 10px 15px 10px 10px;
+    
+    /*background:black;
+    /* definimos a cor de fundo do box 
+    background-color:#666;
+    /* definimos o quão arredondado irá ficar nosso box 
+    border-radius: 90px;*/
+}
+
+.post {
+    background-color: #bfad394d ;
+    border-radius: 10px !important ;
+    padding: 5px 15px 1px 15px ;/* top left down ritgh*/
+    margin-bottom: 12px;
+    width: 100%;
+    /*justify-content: center;*/
+}
+.navbar{
+    /* definimos o quão arredondado irá ficar nosso box */
+    border-radius: 10px !important ;
+    /* definimos a altura do box */
+    height:50px !important ;
+}
+.nav-item{
+    padding: 8px 8px 8px 8px ;
+}
+.propaganda{
+    background-color: #e4e5e6 !important ;
+    height: 100px !important ;
+    
+}
+.content{
+    margin-left: 00px;
+}
+.menu_lateral{
+    /*background: black;*/
+    padding: 00px 15px 10px 10px ;/* top ritgh down left*/
+}
+.barra-navegacao{
+    background: #f8f9fa;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px !important ;
+    padding: 8px 8px 8px 8px ;/* top ritgh down left*/
+}
+.menu_principal{
+    /*background: black;*/
+    padding: 00px 10px 10px 10px ;/* top ritgh down left*/
+}
+.conteudo{
+    padding: 00px 0px 10px 0px ;/* top ritgh down left*/
+}
