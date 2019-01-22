@@ -5,13 +5,13 @@
     {% for post in posts %}
         <div class="post">
             <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
-            <!--a href="{% url 'post_detail' pk=post.pk %}">Comments: {{ post.comments.count }}</a><br-->
-            <a href="{% url 'post_detail' pk=post.pk %}">Comments: {{ post.approved_comments.count }}</a>
+            
+            <a href="{% url 'post_detail' pk=post.pk %}">Comentarios: {{ post.approved_comments.count }}</a>
             <div class="date">
-                <p>published: {{ post.published_date }}</p>
+                <p>publicado em: {{ post.published_date }}</p>
             </div>
             
-            <p>{{ post.text|linebreaksbr }}</p>
+            <p ><a href="{% url 'post_detail' pk=post.pk %}" class="texto_blog">{{ post.text|linebreaksbr|slice:"0:240" }}...</a></p>
         </div>
     {% endfor %}
 {% endblock %}

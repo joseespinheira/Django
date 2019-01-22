@@ -27,7 +27,11 @@ def post_new(request):
             return redirect('post_detail', pk=post.pk)
     else:
         form = PostForm()
-    return render(request, 'blog/post_edit.html', {'form': form})
+        context = { # Aqui fica tudo que estou passando para a pagina web
+            "form": form, 
+            "acao": "Nova"
+        }
+    return render(request, 'blog/post_edit.html', context)
 
 @login_required
 # Trata das edições das postagens
@@ -43,7 +47,11 @@ def post_edit(request, pk):
             return redirect('post_detail', pk=post.pk)
     else:
         form = PostForm(instance=post)
-    return render(request, 'blog/post_edit.html', {'form': form})
+        context = { # Aqui fica tudo que estou passando para a pagina web
+            "form": form, 
+            "acao": "Editar"
+        }
+    return render(request, 'blog/post_edit.html', context)
 
 @login_required
 # Lista das postagens de rascunho.

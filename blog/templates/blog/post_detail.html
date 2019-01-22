@@ -2,18 +2,23 @@
 
 {% block content %}
     <div class="post">
+        <div class="row align-items-center" >
         {% if post.published_date %}
-            <div class="date">
-                {{ post.published_date }}
+            <div class="col-9 date">
+                publicado em: {{ post.published_date }}
             </div>
         {% else %}
-            <a class="btn btn-default" href="{% url 'post_publish' pk=post.pk %}">Publish</a>
+            <div class="col-9">
+                <a class="btn btn-default" href="{% url 'post_publish' pk=post.pk %}">Publicar</a>
+            </div>
         {% endif %}
         {% ifequal user post.author %}
-            <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a class="btn btn-default" href="{% url 'post_remove' pk=post.pk %}"><span class="glyphicon glyphicon-remove"></span></a>
+            <div class="col-3"style="text-align: right;">
+                <a href="{% url 'post_edit' pk=post.pk %}"><i class="fas fa-pen-square fa-1x"></i></a>
+                <a href="{% url 'post_remove' pk=post.pk %}"><i class="far fa-trash-alt fa-1x"></i></a>
+            </div>
         {% endifequal %}
-        
+        </div>
         <h1>{{ post.title }}</a></h1>
         
         <p>{{ post.text|linebreaksbr }}</p>
@@ -23,7 +28,7 @@
         
     </div>
 <hr>
-<a class="btn btn-default" href="{% url 'add_comment_to_post' pk=post.pk %}">Add comment</a>
+<a class="btn btn-default" href="{% url 'add_comment_to_post' pk=post.pk %}">Add comentario</a>
 {% for comment in post.comments.all %}
     {% if user.is_authenticated or comment.approved_comment %}
     <div class="comment">
@@ -39,6 +44,6 @@
     </div>
     {% endif %}
 {% empty %}
-    <p>No comments here yet :(</p>
+    <p>Não há comentarios aqui ainda :(</p>
 {% endfor %}
 {% endblock %}

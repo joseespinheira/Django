@@ -2,6 +2,10 @@ h1 a,h2 a {
     color: #FCA205;
 }
 
+body{
+    background: #cceacf;
+}
+
 .page-header {
     background-color: #00008B;
     margin-top: 0;
@@ -54,7 +58,7 @@ h1, h2, h3, h4 {
 }
 
 .bnav{
-    padding: 10px 15px 10px 10px;
+    padding: 10px 10px 10px 10px;
     
     /*background:black;
     /* definimos a cor de fundo do box 
@@ -64,11 +68,20 @@ h1, h2, h3, h4 {
 }
 
 .post {
-    background-color: #bfad394d ;
+    background-color: #5fc1659c ;
     border-radius: 10px !important ;
     padding: 5px 15px 1px 15px ;/* top left down ritgh*/
     margin-bottom: 12px;
     width: 100%;
+    /*justify-content: center;*/
+}
+.edit {
+    background-color: #5fc1659c ;
+    border-radius: 10px !important ;
+    padding: 5px 15px 1px 15px ;/* top left down ritgh*/
+    margin-bottom: 12px;
+    width: 100%;
+    height: 500px;
     /*justify-content: center;*/
 }
 .navbar{
@@ -81,7 +94,7 @@ h1, h2, h3, h4 {
     padding: 8px 8px 8px 8px ;
 }
 .propaganda{
-    background-color: #e4e5e6 !important ;
+    background-color: #32bd48 !important ;
     height: 100px !important ;
     
 }
@@ -90,7 +103,7 @@ h1, h2, h3, h4 {
 }
 .menu_lateral{
     /*background: black;*/
-    padding: 00px 15px 10px 10px ;/* top ritgh down left*/
+    padding: 00px 10px 10px 10px ;/* top ritgh down left*/
 }
 .barra-navegacao{
     background: #f8f9fa;
@@ -105,4 +118,22 @@ h1, h2, h3, h4 {
 }
 .conteudo{
     padding: 00px 0px 10px 0px ;/* top ritgh down left*/
+}
+.texto_blog{
+    color: black;
+}
+.login {
+    background-color: #5fc1659c ;
+    border-radius: 10px !important ;
+    padding: 15px 15px 20px 15px ;/* top left down ritgh*/
+    /*margin-bottom: 12px;*/
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.login-btn{
+    width: 200px;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
 }
