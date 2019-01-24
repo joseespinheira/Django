@@ -56,7 +56,7 @@ def post_edit(request, pk):
 @login_required
 # Lista das postagens de rascunho.
 def post_rascunho_list(request):
-    posts = Post.objects.filter(published_date__isnull=True).order_by('created_date')
+    posts = Post.objects.filter(published_date__isnull=True).order_by('-created_date')
     return render(request, 'blog/post_rascunho_list.html', {'posts': posts})
     
 # Publica a postagem

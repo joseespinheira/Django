@@ -9,7 +9,7 @@
             </div>
         {% else %}
             <div class="col-9">
-                <a class="btn btn-default" href="{% url 'post_publish' pk=post.pk %}">Publicar</a>
+                <a class="login-btn ui green button" href="{% url 'post_publish' pk=post.pk %}">Publicar</a>
             </div>
         {% endif %}
         {% ifequal user post.author %}

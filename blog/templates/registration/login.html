@@ -4,8 +4,7 @@
 
 <div class="login">
 
-    <h1 style="text-align:center;">Faça login</h1>
- 
+    <h1>Faça login</h1>
 
     {% if form.errors %}
         <p>Erro: Usuário ou Senha incorreto. Tente novamente.</p>
@@ -14,6 +13,7 @@
     
     <form method="post" action="{% url 'login' %}">
     {% csrf_token %}
+        <div-->
         <table>
         <tr>
             <td>{{ form.username.label_tag }}</td>
@@ -25,10 +25,9 @@
         </tr>
         </table>
 </br>
-        <input class="btn btn-outline-dark login-btn" type="submit" value="login" />
+        <input class="login-btn ui green button " type="submit" value="login" />
         <input type="hidden" name="next" value="{{ next }}" />
     </form>
-
 </div>
 <div class="login" style="margin-top:15px; text-align:center;">
     <a>Cadastre-se clicando aqui!</a>
