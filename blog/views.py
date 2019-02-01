@@ -3,6 +3,8 @@ from django.utils import timezone
 from django.contrib.auth.decorators import login_required
 from .forms import PostForm, CommentForm
 from .models import Post, Comment
+from libgravatar import Gravatar
+
 
 # Lista todas as postagens publicadas
 def post_list(request):

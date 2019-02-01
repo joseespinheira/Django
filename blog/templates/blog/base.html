@@ -86,34 +86,33 @@
                     <div class="navbar-expand-sm col-sm-4 col-md-3 col-lg-3 col-xl-2 menu_principal">
                         <div class="collapse navbar-collapse " id="menu_geral">
                             <div class="barra-navegacao">
-                                <div class="collapse navbar-collapse" id="menu_geral">
-                                    <div class="perfil">
-                                        <div>
-                                        <img>Foto</img><br>
-                                        {{ user.username }}
-                                        </div><hr>
-                                        <div>
-                                            Opção
-                                        </div>
-                                    </div>
+                                
+                                <div>
+                                    <img src="https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&f=y" alt="Paris" class="col foto">
                                 </div>
-                            </div><!--/div-->
+                                
+                                </img>
+                                Uma de três colunas
+                                {{ user.username }}<br>
+                                {{ user.email }}<br>
+                                {{ val }}
+                                
+                            </div><hr>
                         </div>
                     </div>
+                    
                     <div class="col conteudo">
                     {% block content %}
                     {% endblock %}
                     </div>
+                    
                     <div class="collapse navbar-collapse col-sm-12 col-md-5 col-lg-4 col-xl-5 menu_lateral">
-                        
-                            <div class="barra-navegacao">
-                                oioi
-                            </div>
-                        
+                        <div class="barra-naveg">
+                            oioi
+                        </div>
                     </div>
                 </div>
             </div>
-            
             <!-- JavaScript (Opcional) -->
             <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
             <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
